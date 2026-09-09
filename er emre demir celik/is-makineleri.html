@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+       <!-- Temel SEO Meta Etiketleri -->
+        <meta name="description" content="Er Emre İnşaat iş makinesi ve araç filosu hizmetleri. Güçlü makine parkımızla hizmeti zirveye taşıyoruz." />
+        <meta name="keywords" content="Erzurum iş makineleri, iş makinesi kiralama Erzurum, hafriyat, Er Emre İnşaat, Er Emre Demir Çelik" />
+        <meta name="author" content="MENA Bilişim" />
+        <meta name="robots" content="index, follow" />
+
+        <!-- Open Graph (WhatsApp ve Sosyal Medya Paylaşım Kartı) -->
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="İş Makineleri Hizmeti | Er Emre Demir & Çelik" />
+        <meta property="og:description" content="Hizmeti zirveye taşıyoruz. Er Emre İnşaat iş makinesi ve araç filosu." />
+        <meta property="og:url" content="https://www.eremredemircelik.com/is-makineleri.html" />
+        <meta property="og:image" content="https://www.eremredemircelik.com/assets/img/og-image.jpg" />
+
+        <!-- Canonical URL -->
+        <link rel="canonical" href="https://www.eremredemircelik.com/is-makineleri.html" />
+
+        <title>İş Makineleri Hizmeti | Er Emre Demir & Çelik</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            /* Portfolio / Ürün Kartları Eşitleme */
+            #portfolio .portfolio-item {
+                margin-bottom: 30px;
+            }
+            #portfolio .portfolio-item a.portfolio-link {
+                display: block;
+                width: 100%;
+                height: 240px;
+                overflow: hidden;
+            }
+            #portfolio .portfolio-item img {
+                width: 100% !important;
+                height: 100% !important;
+                object-fit: cover !important;
+                object-position: center !important;
+            }
+            #portfolio .portfolio-caption {
+                min-height: 125px !important;
+                display: flex !important;
+                flex-direction: column !important;
+                justify-content: center !important;
+            }
+
+            /* Hakkımızda Zaman Çizelgesi Daire Düzeltmesi */
+            .timeline > li .timeline-image {
+                overflow: hidden !important;
+                border-radius: 100% !important;
+                background-color: #a63428 !important;
+            }
+            .timeline > li .timeline-image img {
+                width: 100% !important;
+                height: 100% !important;
+                object-fit: cover !important;
+                border-radius: 100% !important;
+                display: block !important;
+            }
+            /* Giriş Ekranı Tipografi ve Mobil Taşma Düzeltmesi */
+header.masthead .masthead-subheading {
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+    font-style: normal !important;
+    letter-spacing: 2px !important;
+    font-weight: 600 !important;
+}
+
+header.masthead .masthead-heading {
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+    font-weight: 700 !important;
+    word-break: break-word;
+}
+
+/* Telefon ve Küçük Ekranlar İçin Boyut Eşitleme */
+@media (max-width: 576px) {
+    header.masthead {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    header.masthead .masthead-subheading {
+        font-size: 1.1rem !important;
+        margin-bottom: 12px !important;
+    }
+    header.masthead .masthead-heading {
+        font-size: 2.1rem !important;
+        line-height: 2.5rem !important;
+        margin-bottom: 25px !important;
+    }
+}  
+/* Giriş Ekranı Arka Planını Aydınlatma */
+header.masthead {
+    background-color: transparent !important;
+    position: relative;
+}
+
+/* Arka plan görselinin parlaklığını ve canlılığını artırma */
+header.masthead::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: inherit;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(1.18) contrast(1.05); /* Parlaklık ve netlik artışı */
+    z-index: 1;
+}
+
+/* Yazıların ve butonun aydınlatılan görselin üstünde net kalması */
+header.masthead .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Yazıların açık fonda kaybolmaması için hafif gölge */
+header.masthead .masthead-heading,
+header.masthead .masthead-subheading {
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.55) !important;
+} 
+/* Modal Kapat ve Birincil Butonları Kurumsal Kırmızı Yapma */
+.portfolio-modal .btn-primary,
+.btn-primary {
+    background-color: #a63428 !important;
+    border-color: #a63428 !important;
+    color: #ffffff !important;
+}
+
+/* Üzerine Gelindiğinde (Hover / Focus) Hafif Koyu Kırmızı */
+.portfolio-modal .btn-primary:hover,
+.portfolio-modal .btn-primary:focus,
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #87281e !important;
+    border-color: #87281e !important;
+    color: #ffffff !important;
+}
+        </style>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top">
+                    <img src="assets/img/navbar-logo.png" alt="Er Emre Demir Çelik" style="height: 45px;" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <!-- Hizmetler Dropdown Menü -->
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="hizmetlerDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        HİZMETLER
+    </a>
+    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="hizmetlerDropdown">
+        <li><a class="dropdown-item" href="index.html#page-top">İnşaat Malzemeleri</a></li>
+        <li><a class="dropdown-item" href="is-makineleri.html">İş Makineleri Hizmeti</a></li>
+    </ul>
+</li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">ÜRÜNLER</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">HAKKIMIZDA</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">İLETİŞİM</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- İş Makineleri Bölümü -->
+<section class="page-section" id="is-makineleri" style="padding-top: 8rem;">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-heading text-uppercase">İş Makineleri Hizmeti</h2>
+            <h3 class="section-subheading text-muted fs-4">Hizmeti zirveye taşıyoruz.</h3>
+            <p class="text-muted mx-auto" style="max-width: 700px;">
+                Güçlü makine parkımız, deneyimli operatör kadromuz ve lojistik çözümlerimizle saha operasyonlarında güvenilir iş ortağınız olmaya devam ediyoruz.
+            </p>
+        </div>
+
+        <!-- 8'li Fotoğraf Galerisi -->
+        <div class="row g-4">
+            <div class="col-sm-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm overflow-hidden">
+                    <img class="img-fluid" src="assets/img/makine-1.jpg" alt="Er Emre İnşaat İş Makinesi" style="height: 220px; width: 100%; object-fit: cover;">
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm overflow-hidden">
+                    <img class="img-fluid" src="assets/img/makine-2.jpg" alt="Er Emre İnşaat İş Makinesi" style="height: 220px; width: 100%; object-fit: cover;">
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm overflow-hidden">
+                    <img class="img-fluid" src="assets/img/makine-3.jpg" alt="Er Emre İnşaat İş Makinesi" style="height: 220px; width: 100%; object-fit: cover;">
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm overflow-hidden">
+                    <img class="img-fluid" src="assets/img/makine-4.jpg" alt="Er Emre İnşaat İş Makinesi" style="height: 220px; width: 100%; object-fit: cover;">
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm overflow-hidden">
+                    <img class="img-fluid" src="assets/img/makine-5.jpg" alt="Er Emre İnşaat İş Makinesi" style="height: 220px; width: 100%; object-fit: cover;">
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm overflow-hidden">
+                    <img class="img-fluid" src="assets/img/makine-6.jpg" alt="Er Emre İnşaat İş Makinesi" style="height: 220px; width: 100%; object-fit: cover;">
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm overflow-hidden">
+                    <img class="img-fluid" src="assets/img/makine-7.jpg" alt="Er Emre İnşaat İş Makinesi" style="height: 220px; width: 100%; object-fit: cover;">
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm overflow-hidden">
+                    <img class="img-fluid" src="assets/img/makine-8.jpg" alt="Er Emre İnşaat İş Makinesi" style="height: 220px; width: 100%; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+
+        <!-- İletişime Geç Butonu -->
+        <div class="text-center mt-5">
+            <a class="btn btn-primary btn-xl text-uppercase" href="#contact">Kiralama ve Bilgi İçin İletişime Geçin</a>
+        </div>
+    </div>
+</section>
+        <!-- Contact / Konum & İletişim -->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-heading text-uppercase text-white">İletişim & Konum</h2>
+                    <h3 class="section-subheading text-white-50">Bize ulaşın veya ofisimizi ziyaret edin.</h3>
+                </div>
+                
+                <div class="row align-items-center">
+                    <!-- Sol Taraf: İletişim Bilgileri -->
+                    <div class="col-lg-5 text-white mb-4 mb-lg-0">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-map-marker-alt fa-2x text-primary me-3"></i>
+                            <div>
+                                <h5 class="mb-0">Adres</h5>
+                                <p class="mb-0 text-white-50">İbrahim Hakkı, Çevre Yolu No:37, 25200 Yakutiye / Erzurum</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-phone fa-2x text-primary me-3"></i>
+                            <div>
+                                <h5 class="mb-0">Telefon</h5>
+                                <p class="mb-0 text-white-50">(0442) 243 01 05</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-envelope fa-2x text-primary me-3"></i>
+                            <div>
+                                <h5 class="mb-0">E-posta</h5>
+                                <p class="mb-0 text-white-50">eremreinsaat@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sağ Taraf: Google Maps Harita -->
+                    <div class="col-lg-7">
+                        <div class="ratio ratio-16x9 rounded overflow-hidden shadow">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10286.493286971652!2d41.26861761688265!3d39.95944301205867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406e5f6a4c604ccb%3A0xb18f1809af825f7a!2sEmre%20%C4%B0n%C5%9Faat%20(Er%20Emre%20Demir%20%C3%87elik)!5e0!3m2!1str!2str!4v1788338235854!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; Er Emre Demir Çelik 2026</div>
+                    <div class="col-lg-4 my-3 my-lg-0 text-center">
+                        <!-- Yalnızca Aktif Instagram Butonu -->
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/eremredemircelik25/" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <!-- LinkedIn -->
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/er-emre-demir-%C3%A7elik-a3b289435/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                        </a>
+
+                   <!-- Twitter (X) -->
+                        <a class="btn btn-dark btn-social mx-2" href="https://x.com/eremreinsaat" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a class="link-dark text-decoration-none me-3" href="#!">Gizlilik Politikası</a>
+                        <a class="link-dark text-decoration-none" href="#!">Kullanım Şartları</a>
+                    </div>
+                </div>
+            </div>
+            <!-- MENA Bilişim Tasarım İmzası -->
+                <div class="row mt-3">
+                    <div class="col-12 text-center">
+                        <p class="small mb-0" style="font-family: 'Montserrat', sans-serif; font-size: 0.85rem;">
+                            Bu sitenin tasarımı 
+                            <a href="http://menabilisim.com/" target="_blank" rel="noopener noreferrer" style="color: #212529; font-weight: 700; text-decoration: none; border-bottom: 1px solid #212529;">
+                                MENA Bilişim
+                            </a> 
+                            tarafından yapılmıştır.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <h2 class="text-uppercase">Demir Çelik Depolama</h2>
+                                    <p class="item-intro text-muted">Toptan & Perakende Satış</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." />
+                                    <p>Her ebat ve standartta inşaat demiri, hasır çelik ve profil ürünleri geniş stok sahamızda hazır bulunmaktadır.</p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Kapat
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <h2 class="text-uppercase">Bims & Duvar Malzemeleri</h2>
+                                    <p class="item-intro text-muted">Geniş Ürün Sahası</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="..." />
+                                    <p>Yüksek ısı ve ses yalıtımlı bims blokları, asmolen ve briket çeşitleri projeleriniz için en uygun fiyatlarla temin edilir.</p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Kapat
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 3 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <h2 class="text-uppercase">Boya & Yapı Kimyasalları</h2>
+                                    <p class="item-intro text-muted">Filli Boya & Fawori Bayiliği</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="..." />
+                                    <p>İç ve dış cephe boyaları, astarlar, su ve ısı izolasyon kimyasalları yetkili bayilik güvencesiyle sunulmaktadır.</p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Kapat
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 4 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <h2 class="text-uppercase">Açık Depolama Sahası</h2>
+                                    <p class="item-intro text-muted">Lojistik ve Sevkiyat Alanı</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4.jpg" alt="..." />
+                                    <p>Geniş depolama kapasitemiz sayesinde tüm yapı malzemeleri hava koşullarına uygun şekilde korunup sevk edilmektedir.</p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Kapat
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 5 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <h2 class="text-uppercase">Şantiye Teslimatı</h2>
+                                    <p class="item-intro text-muted">Hızlı ve Güvenli Sevkiyat</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.jpg" alt="..." />
+                                    <p>Siparişleriniz taahhüt edilen zamanda doğrudan şantiye adresinize vinçli araçlarımızla teslim edilir.</p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Kapat
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 6 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <h2 class="text-uppercase">İş Makineleri & Saha Gücü</h2>
+                                    <p class="item-intro text-muted">Şantiye Operasyon Desteği</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/santiye-teslimat.jpg" alt="..." />
+                                    <p>Şantiye içi yükleme, boşaltma ve hafriyat süreçleriniz için profesyonel iş makineleri filomuz hizmetinizdedir.</p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Kapat
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- SB Forms JS-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>

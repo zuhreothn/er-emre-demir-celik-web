@@ -11001,7 +11001,7 @@ header.masthead .masthead-heading {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(255, 200, 0, 0.9);
+  background: rgba(255, 200, 0, 0.9);  
   align-items: center;
   justify-content: center;
   opacity: 0;
@@ -11326,7 +11326,7 @@ header.masthead {
 }
 
 header.masthead .container {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/img/header-bg.jpg");
+   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../assets/img/header-bg.jpg");
     background-size: cover;
     background-position: center;
     border-radius: 16px; /* Köşeleri yuvarlatılmış çerçeve hissi */
@@ -11625,4 +11625,72 @@ html, body {
 #clients a:hover .partner-logo.logo-xl,
 #clients .partner-logo.logo-xl:hover {
     transform: scale(1.75) !important; /* Üzerine gelindiğinde akıcı bir şekilde öne fırlar */
+}
+
+/* Menü linklerinin normalde ve active durumunda koyu kalması */
+#mainNav .navbar-nav .nav-link,
+#mainNav .navbar-nav .nav-link.active {
+    color: #212529 !important;
+}
+
+/* Sadece fareyle üzerine gelindiğinde (hover) kırmızı yanması */
+#mainNav .navbar-nav .nav-link:hover {
+    color: #a63428 !important;
+}
+/* Mobil Header Uyum Kuralları */
+@media (max-width: 768px) {
+    header.masthead {
+        padding-top: 5rem !important;
+        padding-bottom: 2rem !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    header.masthead .container {
+        padding: 4rem 1rem !important;
+        background-position: center center !important;
+        background-size: cover !important;
+        border-radius: 12px !important;
+    }
+
+    header.masthead .masthead-heading {
+        font-size: 1.8rem !important;
+        line-height: 2.2rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+
+    header.masthead .masthead-subheading {
+        font-size: 1rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+
+    header.masthead .btn {
+        font-size: 0.9rem !important;
+        padding: 0.75rem 1.5rem !important;
+    }
+}
+/* Mobil Dropdown Hizalama */
+@media (max-width: 991.98px) {
+    .navbar-nav .dropdown-menu {
+        position: static !important;
+        float: none;
+        background-color: #212529 !important; /* Koyu şık zemin */
+        border: none;
+        box-shadow: none;
+        padding: 0.5rem 1rem;
+        margin-top: 0.5rem;
+        border-radius: 8px;
+    }
+
+    .navbar-nav .dropdown-item {
+        color: #f8f9fa !important;
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .navbar-nav .dropdown-item:hover,
+    .navbar-nav .dropdown-item:focus {
+        background-color: rgba(255, 255, 255, 0.1) !important;
+        color: #ffc800 !important;
+    }
 }
